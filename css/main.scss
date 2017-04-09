@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500|Roboto:900');
+@import "variables";
+@import "mixin";
+@import "grid";
+
+*, *:after, *:before{
+	@include box-sizing;
+}
+
+body{
+	font-family: $main-font;
+	color: $font-color;
+}
+
+header{
+	text-align: center;
+	text-transform: uppercase;
+
+	h4{
+		font-size: 18px;
+		line-height: 1.5;		
+		color: #898f8f;			
+	}
+
+	h1{
+		color: $header-color;		
+	}
+}
+
+.view-profile{
+	@include btn-hover(#666, #fff, $header-color);
+	@include transition(all, 0.5s, ease); 
+}
+
+
+
+
+
+
+
+
+.animation{
+	@include transition(color, 0.5s, ease);
+}
